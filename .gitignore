@@ -1,0 +1,13 @@
+.Rproj.user
+.Rhistory
+.RData
+.DS_Store
+*.Rcheck/
+superscreener_*.tar.gz
+# simulation output (large; regenerate with reproduce/)
+reproduce/output/
+# never commit data
+data/
+*.csv
+!examples/*.csv
+*.rds

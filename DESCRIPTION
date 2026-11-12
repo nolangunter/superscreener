@@ -1,0 +1,35 @@
+Package: superscreener
+Type: Package
+Title: Cross-Validated Variable Screening with a Price per Variable
+Version: 0.1.0
+Authors@R: c(
+    person("Nolan", "Gunter", role = c("aut", "cre"), email = "nola@berkeley.edu"),
+    person("Alan", "Hubbard", role = "aut"))
+Description: SuperScreener chooses both the screening rule and the number of
+    variables for a binary-outcome prediction model. Candidates are ranking
+    screeners (univariate likelihood ratio, lasso entry order, random forest
+    importance, their consensus, Spearman correlation) at a grid of budgets K,
+    plus screeners that set their own size (screen.glmnet, screen.corP, lasso at
+    lambda.1se, stability selection). Each candidate's selected set is passed to
+    the same Super Learner, and the cross-validation selector picks the candidate
+    with the smallest cross-validated risk plus a price per variable used. The
+    package also provides nested cross-validation of the whole procedure with
+    influence-curve intervals for the AUC, selection-stability summaries, and the
+    simulation design used in the accompanying dissertation chapter.
+URL: https://github.com/nolangunter/superscreener
+BugReports: https://github.com/nolangunter/superscreener/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1)
+Imports:
+    glmnet,
+    ranger,
+    stats,
+    parallel,
+    utils,
+    SuperLearner,
+    xgboost
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2

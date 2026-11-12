@@ -1,0 +1,11 @@
+bibentry(
+  bibtype = "PhdThesis",
+  title = "Algorithmic Choices in Targeted Learning: Calibrated Biomarkers, Effects Among the Treated, and Super Learner Screening",
+  author = person("Nolan", "Gunter"),
+  school = "University of California, Berkeley",
+  year = "2026",
+  note = "Chapter 5: Choosing How Many Variables to Collect: Cross-Validated Screening with an Explicit Price per Variable (with Alan Hubbard)",
+  textVersion = paste("Gunter N (2026). Algorithmic Choices in Targeted Learning, Chapter 5:",
+                      "Choosing How Many Variables to Collect: Cross-Validated Screening with an",
+                      "Explicit Price per Variable (with A. Hubbard). PhD dissertation, UC Berkeley.")
+)
